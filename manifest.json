@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Textarea Maxlength Modifier",
+  "version": "1.0",
+  "description": "Updates maxlength of the textarea in Copilot to 40000.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://copilot.microsoft.com/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
